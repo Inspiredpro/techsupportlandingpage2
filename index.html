@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TechSupport | Find the Right Laptop for Your Needs</title>
+<meta name="description" content="Explore laptops for work, business and education and send an enquiry to the TechSupport sales team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/laptops.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#home"><i></i>TechSupport</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="links">Menu</button>
+    <div class="links" id="links">
+      <a href="#home">Home</a><a href="#products">Products</a><a href="#about">About Us</a><a href="#contact">Contact</a>
+      <a class="btn" href="#contact" data-product="">Get a Quote</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="wrap">
+    <h1>Find the Right Laptop for Your Needs.</h1>
+    <p>Explore reliable laptops for work, business, education and everyday productivity. Our team will help you find the right device for your needs and budget.</p>
+    <div class="row">
+      <a class="btn" href="#products">Explore Products</a>
+      <a class="btn ghost" href="#contact" data-product="">Talk to Our Sales Team</a>
+    </div>
+  </div>
+</header>
+
+<section id="products">
+  <div class="wrap">
+    <div class="eyebrow">Product catalogue</div>
+    <h2 class="sec-h">Laptops for work and business</h2>
+    <p class="sec-p">Compare specifications and send an enquiry for the laptop that interests you.</p>
+    <div class="grid" id="grid"></div>
+    <p class="note">Specifications and prices shown are sample information and may change. Availability and final pricing are confirmed by our sales team.</p>
+  </div>
+</section>
+
+<section class="alt" id="why">
+  <div class="wrap">
+    <div class="eyebrow">Why TechSupport</div>
+    <h2 class="sec-h">Why Choose TechSupport?</h2>
+    <p class="sec-p">Practical help to choose technology that fits how you work.</p>
+    <div class="why">
+      <div><h3>Quality Technology Products</h3><p>Laptops from trusted brands for work, study and business use.</p></div>
+      <div><h3>Professional Sales Assistance</h3><p>Our team helps you understand the options before you decide.</p></div>
+      <div><h3>Solutions for Different Budgets</h3><p>Tell us your budget and we will suggest suitable options.</p></div>
+      <div><h3>Customer Support</h3><p>Questions before or after your enquiry are welcome.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <div class="eyebrow">About us</div>
+      <h2 class="sec-h">Technology advice you can act on</h2>
+    </div>
+    <div>
+      <p>TechSupport helps individuals, students, professionals, businesses and organizations find the right technology products. We listen to what you need the device to do, understand your budget and recommend suitable laptops.</p>
+      <p>Whether you are equipping one person or a whole team, our sales team is ready to guide you from the first question to the right choice.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contact">
+  <div class="wrap contact">
+    <div class="info">
+      <div class="eyebrow">Contact</div>
+      <h2 class="sec-h">Talk to our sales team</h2>
+      <p>Select a laptop or tell us what you need and we will get back to you.</p>
+      <p><b>Email:</b> sales@your-domain.example</p>
+      <p><b>Phone:</b> +234 000 000 0000</p>
+      <p><b>Country:</b> Nigeria</p>
+    </div>
+    <form id="form" novalidate>
+      <div class="two">
+        <div class="f"><label for="name">Customer Name *</label><input id="name" name="name" autocomplete="name" required><span class="err"></span></div>
+        <div class="f"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required><span class="err"></span></div>
+      </div>
+      <div class="two">
+        <div class="f"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" autocomplete="tel" required><span class="err"></span></div>
+        <div class="f"><label for="budget">Budget (₦)</label><input id="budget" name="budget" placeholder="e.g. 1,300,000"></div>
+      </div>
+      <div class="f"><label for="product">Product Interested In *</label><select id="product" name="product" required></select><span class="err"></span></div>
+      <div class="f"><label for="message">Customer Message</label><textarea id="message" name="message"></textarea></div>
+      <button class="btn" id="send" type="submit">Send Enquiry</button>
+      <p id="msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a class="brand" href="#home" style="color:#fff"><i></i>TechSupport</a><p style="margin-top:12px">Helping individuals and businesses find the right laptops and technology products.</p></div>
+      <div><h4>Navigate</h4><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About Us</a><a href="#contact">Contact</a></div>
+      <div><h4>Contact</h4><p>sales@your-domain.example</p><p>+234 000 000 0000</p><p>Nigeria</p></div>
+    </div>
+    <div class="copy">© <span id="yr"></span> TechSupport. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="assets/products-data.js"></script>
+<script src="assets/laptops.js"></script>
+</body>
+</html>
